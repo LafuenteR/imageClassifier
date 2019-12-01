@@ -12,6 +12,7 @@
 		BC8FC8802393AE4D00070084 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8FC87E2393AE4D00070084 /* Main.storyboard */; };
 		BC8FC8822393AE6A00070084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8FC8812393AE6A00070084 /* Assets.xcassets */; };
 		BC8FC8852393AE6A00070084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8FC8832393AE6A00070084 /* LaunchScreen.storyboard */; };
+		BC8FC88D2393B90C00070084 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BC8FC88C2393B90C00070084 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BC8FC8812393AE6A00070084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8FC8842393AE6A00070084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8FC8862393AE6A00070084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8FC88C2393B90C00070084 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				BC8FC87A2393AE4D00070084 /* AppDelegate.swift */,
 				BC8FC87C2393AE4D00070084 /* ViewController.swift */,
+				BC8FC88C2393B90C00070084 /* SqueezeNet.mlmodel */,
 				BC8FC87E2393AE4D00070084 /* Main.storyboard */,
 				BC8FC8812393AE6A00070084 /* Assets.xcassets */,
 				BC8FC8832393AE6A00070084 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8FC87D2393AE4D00070084 /* ViewController.swift in Sources */,
+				BC8FC88D2393B90C00070084 /* SqueezeNet.mlmodel in Sources */,
 				BC8FC87B2393AE4D00070084 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,8 +287,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Automatic;
 				DEVELOPMENT_TEAM = 8P46ZX55J8;
 				INFOPLIST_FILE = "Image Classifier/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,8 +307,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				COREML_CODEGEN_LANGUAGE = Automatic;
 				DEVELOPMENT_TEAM = 8P46ZX55J8;
 				INFOPLIST_FILE = "Image Classifier/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
